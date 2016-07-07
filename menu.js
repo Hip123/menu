@@ -17,7 +17,7 @@ class Menu {
 
 	_onMenuClick (event) {
 		let isItemClick = false;
-		if (event.target.classList.contains('menu__item')) {
+		if (event.target.classList.contains('menu__item') || event.target.classList.contains('button')) {
 			isItemClick = true;
 			this._onMenuItemClick(event);
 		}
